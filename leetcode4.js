@@ -8,7 +8,6 @@
 // decrement() reduces the current value by 1 and then returns it.
 // reset() sets the current value to init and then returns it.
 
-
 var createCounter = function(init){
     var g = init;
     return{
