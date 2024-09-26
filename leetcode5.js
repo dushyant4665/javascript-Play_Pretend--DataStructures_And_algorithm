@@ -20,17 +20,16 @@ function expect(val){
                  return true
             }
             else{
-                throw new error ('not equal')
+                throw new Error ('Not Equal')
             }
-        }
+        },
         notToBe:function(eqVal){
             if (val!==eqVal){
-                return true
+                return true;
             }
             else{
-                throw new error ('equal')
+                throw new Error ('Equal')
             }
-
-        }
     }
+}
 }
