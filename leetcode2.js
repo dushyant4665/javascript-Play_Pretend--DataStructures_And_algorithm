@@ -1,16 +1,12 @@
-// Given an integer n, return a counter function. 
-// This counter function initially returns n and then returns 1 more than the 
-// previous value every subsequent time it is called (n, n + 1, n + 2, etc).
+// Write a function createHelloWorld.
+// It should return a new function that always returns "Hello World".
 
-function createCounter(n){
-    let counter = n;
-    return function(){
-     return counter++;
-    }
- }
- let lalu = createCounter()
- 
- lalu();
- lalu();
- lalu();
-lalu();
+// solution
+
+
+const hel=createHelloWorld=()=>{             //creating a constant hel and assigning a function createHelloWorld
+    // createHelloWorld is an arrow function that returns another function
+return function() {                      //This function being returned
+return 'Hello World';                // The returned function will always return the Hello World
+};
+};

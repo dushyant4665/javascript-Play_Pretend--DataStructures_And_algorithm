@@ -8,20 +8,11 @@
 // decrement() reduces the current value by 1 and then returns it.
 // reset() sets the current value to init and then returns it.
 
-var createCounter = function(init){
-    var g = init;
-    return{
-        increment:()=>++g,
-        decrement:()=>--g,
-        reset:()=>g=init
-    }  
-}
-
-function createCounter(init){
-    let f =init;
-    return{
-        increament:()=>f+1,
-        decrement:()=>f-1,
-        reset:()=>f
-    }
+var createCounter=function(init){            // creating a function createCounter in var varible
+    let f =init                        // declaring a variable f and initialing it with init (the starting value)
+    return {                             // return an object with three methods: increment, decrement, and reset
+        increment:()=>++f,          //for increment ++f but does not update f
+        decrement: ()=>--f,          //for decrement --f but does not update f
+        reset:()=>f=init                   //for reset method the current value of f (which is not modified modified)
+    };
 }

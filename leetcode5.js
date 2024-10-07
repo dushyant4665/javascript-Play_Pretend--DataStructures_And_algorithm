@@ -13,23 +13,21 @@
 
 // solution
 
-function expect(val){
-    return {
-        toBe:function(eqVal){
-            if (val===eqVal){
-                 return true
-            }
-            else{
-                throw new Error ('Not Equal')
-            }
+function expect(val) {                            // Creating a function named expect which takes in a value val
+    return {                                      // The function returns an object.
+        toBe: function(eqVal) {                   // The first method in the object is 'toBe which accepts eqVal as a parameter
+            if (val === eqVal) {                  // It checks if val is strictly equal to eqVal
+                return true;                      // If they are equal, it returns true
+            } else {                              // Otherwise,
+                throw new Error('Not Equal');     // It throws an error with the message Not Equal
+            }  
         },
-        notToBe:function(eqVal){
-            if (val!==eqVal){
-                return true;
-            }
-            else{
-                throw new Error ('Equal')
-            }
+        notToBe: function(eqVal) {                // The second method is notToBe, which accepts eqVal as a parameter
+            if (val !== eqVal) {                  // It checks if val is NOT strictly equal to eqVal
+                return true;                      // If they are not equal, it returns true.
+            } else {                              // Otherwise,
+                throw new Error('Equal');         // It throws an error with the message Equal
+         }
     }
-}
+};
 }
