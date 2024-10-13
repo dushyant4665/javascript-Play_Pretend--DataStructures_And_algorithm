@@ -16,3 +16,9 @@ var createCounter=function(init){            // creating a function createCounte
         reset:()=>f=init                   //for reset method the current value of f (which is not modified modified)
     };
 }
+
+var he =createCounter(6)
+
+he();
+he();
+he();  
