@@ -22,14 +22,14 @@ let nums = [1, 2, 3, 4];
 let sum = function(accum, curr){return accum + curr;};
 let init = 0;
 
-console.log(reduce(nums, sum, init)); // Output: 10
+console.log(reduce(nums, sum, init)); //output: 10
 
 let nums2 = [1, 2, 3, 4];
 let sum2 = function(accum, curr) { return accum + curr * curr; };
 let init2 = 100;
-console.log(reduce(nums2, sum2, init2)); // Output: 130
+console.log(reduce(nums2, sum2, init2)); //output: 130
 
 let nums3 = [];
 let sum3 = function(accum, curr) { return 0; };
 let init3 = 25;
-console.log(reduce(nums3, sum3, init3)); // Output: 25
+console.log(reduce(nums3, sum3, init3)); //output: 25
