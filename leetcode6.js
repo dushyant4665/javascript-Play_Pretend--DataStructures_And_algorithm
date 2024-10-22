@@ -8,12 +8,12 @@
 
 
 function map(arr, fn) {
-    const returnedArray = []; // Nayi array jo result store karegi
+    const returnedArray = [];            //nayi array jo result store karegi
     
-    // Input array ke har element pe loop karo
+                                        //input array ke har element pe loop karo
     for (let i = 0; i < arr.length; i++) {
-      returnedArray.push(fn(arr[i], i)); // Function fn apply karke result store karo
+      returnedArray.push(fn(arr[i], i)); //function fn apply karke result store karo
     }
     
-    return returnedArray; // Transformed array return karo
+    return returnedArray; //transformed array return karo
   }
