@@ -13,7 +13,11 @@ function reduce(nums, fn, init) {
     }
     return result;
 }
-// example 
+
+
+// example de raha hu bhai
+
+
 let nums = [1, 2, 3, 4];
 let sum = function(accum, curr){return accum + curr;};
 let init = 0;
